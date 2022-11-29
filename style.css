@@ -202,6 +202,17 @@ input, textarea, button {
   opacity: 1;
 }
 
+.email-field{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.name-field{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
 /* FOOTER */
 
 footer {
