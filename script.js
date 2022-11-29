@@ -11,3 +11,12 @@ var swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
   });
+document.addEventListener('DOMContentLoaded',() => {
+  new TypeIt(".animated",{
+      speed: 200,
+      loop: true,
+  }).type('Hello World! &#x1F596', {delay: 900})
+  .delete(15)
+  .type('Jorge Eduardo Aqui!',{delay:500})
+  .go(); 
+})
