@@ -288,3 +288,15 @@ footer {
         width: 80%;
     }
 }
+
+.btn-project{
+    border: none;
+    width: 150px;
+    color: black;
+    background-color: aliceblue;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.btn-project:hover{
+    opacity: 1;
+}
