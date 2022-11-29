@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>JorgEdu1</title>
+</head>
+<body>
+    <main>
+        <!-- HEADER -->
+        <header>
+            <div class="logo">
+                <h1 class="logo">{JorgeEdu1}</h1>
+            </div>
+            <div class="menu">
+                <nav class="nav-list">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HOME -->
+        <section id = "home">
+            <div class = "home-info">
+                <h2 class="hello">Hello World! &#x1F596</h2>
+                <span class="home-position">Jorge Eduardo Aqui!</span>
+                <span class="home-resume"> Estudante de Ciência da Computação na UFC, 
+                    apaixonado por tecnologia e programação. 
+                    Atualmente estou estudando POO e Estrutura de Dados.
+                </span>
+                <button>
+                    <a href="#contact">Contate-me</a>
+                </button>
+            </div>
+            <div class="home-img">
+                <img class="img-perf" src="./img/profile-pic.png" alt="Foto de Perfil">
+            </div>
+        </section>
+        <!--Projetos-->
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="project-img">
+                        <img src="./img/9-conteudos-para-quem-quer-se-familiarizar-com-a-area-de-programacao-e-desenvolvimento.jpg" alt="Foto de um site">
+                      </div>
+                      <div class="project-info">
+                        <h2>Projeto_POO</h2>
+                        <p>Criação de um fantasy game de futebol por meio de POO.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="project-img">
+                        <img src="./img/jogo da velha.png" alt="Foto de uma loja online">
+                      </div>
+                      <div class="project-info">
+                        <h2>Projeto_FUP</h2>
+                        <p>Criação de um jogo da velha com C.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="project-img">
+                        <img src="./img/SparseMatrix.png" alt="Foto de um sistema">
+                      </div>
+                      <div class="project-info">
+                        <h2>SparseMatrix</h2>
+                        <p>Criação de uma Matriz Esparsa totalmente do zero.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- CONTACT -->
+
+            <section id="contact">
+                <h2>Contato</h2>
+                <form>
+                <input type="text" placeholder="Digite seu nome" />
+                <input type="email" placeholder="Digite seu e-mail" />
+                <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button>Enviar</button>
+                </form>
+            </section>
+
+            <footer>
+                copyright © 2022 Jorge Eduardo. Todos os direitos reservados
+            </footer>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
