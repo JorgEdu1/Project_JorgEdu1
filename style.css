@@ -13,26 +13,21 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
 }
-
 body::-webkit-scrollbar{
     width: 6px;
 }
-
 body::-webkit-scrollbar-thumb{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 main{
     width: 1120px;
 }
-
 header{
     display: flex;
     align-items: center;
@@ -47,18 +42,15 @@ header{
     max-width: 1120px;
     width: 100%;
 }
-
 .nav-list{
     display: flex;
     gap: 30px;
 }
-
 a{
     cursor: pointer;
     text-decoration: none;
     color: aliceblue;
 }
-
 .hello{
     color:aliceblue;
 }
@@ -70,12 +62,10 @@ section#home{
     padding: 5px 20px;
     width: 100%;
 }
-
 .img-perf{
     width: 400px;
     height: 400px;
 }
-
 .home-info{
     width: 50%;
     display: flex;
@@ -95,21 +85,18 @@ section#home{
     opacity: 0.9;
     border-radius: 5px;
 }
-
 .home-info button a{
     color: black;
 }
 .home-info button:hover{
     opacity: 1;
 }
-
 .home-img{
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .home-img img{
     width: 250px;
     height: 250px;
@@ -117,7 +104,6 @@ section#home{
     box-shadow: 0 10px 10px;
     border-radius: 50%;
 }
-
 @keyframes float{
     0%, 100%{
         transform: translateY(0);
@@ -126,7 +112,6 @@ section#home{
         transform: translateY(-30px);
     }
 }
-
 section#projects{
     height: calc(100vh - 80px);
     width: 100%;
@@ -136,7 +121,6 @@ section#projects{
     justify-content: center;
     background-color: rgb(0, 0, 0);
 }
-
 .project-img {
     width: 50%;
 }
@@ -171,7 +155,6 @@ section#projects{
   flex-direction: column;
   gap: 30px;
 }
-
 #contact form {
   display: flex;
   flex-direction: column;
@@ -180,7 +163,6 @@ section#projects{
   width: 100%;
   padding: 5px 20px;
 }
-
 input, textarea, button {
   box-shadow: 0 1px 2px #ddd;
   border: none;
@@ -189,7 +171,6 @@ input, textarea, button {
   outline: none;
   resize: none;
 }
-
 #contact form button {
   background-color: #7700ff;
   color: white;
@@ -197,17 +178,10 @@ input, textarea, button {
   cursor: pointer;
   opacity: 0.9;
 }
-
 #contact form button:hover{
   opacity: 1;
 }
-
-.email-field{
-    display: flex;
-    gap: 10px;
-    padding-top: 10px;
-}
-.name-field{
+.email-field,.name-field{
     display: flex;
     gap: 10px;
     padding-top: 10px;
@@ -230,7 +204,6 @@ footer {
     gap: 30px;
     color: aliceblue;
 }
-  
 #contact form {
     display: flex;
     flex-direction: column;
@@ -239,7 +212,6 @@ footer {
     width: 100%;
     padding: 5px 20px;
 }
-  
 input, textarea, button {
     box-shadow: 0 1px 2px #ddd;
     color: aliceblue;
@@ -250,7 +222,6 @@ input, textarea, button {
     outline: none;
     resize: none;
 }
-  
 #contact form button {
     background-color: aliceblue;
     color: black;
@@ -258,9 +229,63 @@ input, textarea, button {
     cursor: pointer;
     opacity: 0.9;
 }
-  
 #contact form button:hover{
     opacity: 1;
+}
+.btn i{
+    line-height: 90px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    transition: 0.2s linear;
+}
+.btn{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 30%;
+    position: relative;
+    box-shadow: 0 1px 4px 1px aliceblue;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+}
+.btn:hover {
+    transform: scale(1.4);
+    color: aliceblue;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+    background-color: black;
+}
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
 }
   
   /* FOOTER */
@@ -271,7 +296,6 @@ footer {
     padding: 50px;
     text-align: center;
 }
-
 @media (max-width: 450px){
     header{
         justify-content: center;
@@ -299,7 +323,6 @@ footer {
         width: 80%;
     }
 }
-
 .btn-project{
     border: none;
     width: 150px;
