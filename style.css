@@ -83,14 +83,14 @@ section#home{
     color: white;
     font-size: 18px;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
     border-radius: 5px;
 }
 .home-info button a{
     color: black;
 }
 .home-info button:hover{
-    opacity: 1;
+    opacity: 0.9;
 }
 .home-img{
     width: 30%;
@@ -183,10 +183,10 @@ input, textarea, button {
   color: white;
   font-size: 18px;
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 1;
 }
 #contact form button:hover{
-  opacity: 1;
+  opacity: 0.9;
 }
 .email-field,.name-field{
     display: flex;
@@ -234,10 +234,10 @@ input, textarea, button {
     color: black;
     font-size: 18px;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
 }
 #contact form button:hover{
-    opacity: 1;
+    opacity: 0.9;
 }
 .btn i{
     line-height: 90px;
@@ -333,8 +333,8 @@ footer {
     color: black;
     background-color: aliceblue;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
 }
 .btn-project:hover{
-    opacity: 1;
+    opacity: 0.9;
 }
