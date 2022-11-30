@@ -8,6 +8,7 @@
     position: relative;
 }
 .logo{
+    display: none;
     color: aliceblue;
 }
 html{
@@ -145,6 +146,12 @@ section#projects{
     justify-content: center;
     align-items: center;
     padding: 0 30px;
+}
+.swiper-button-next,.swiper-button-prev{
+    color: aliceblue;
+}
+.swiper-pagination-bullet{
+    background-color: aliceblue;
 }
 #contact {
   height: calc(100vh + 80px);
@@ -299,9 +306,6 @@ footer {
 @media (max-width: 450px){
     header{
         justify-content: center;
-    }
-    .logo{
-        display: none;
     }
     section#home{
         flex-direction: column-reverse;

@@ -7,6 +7,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     pagination: {
       el: ".swiper-pagination",
+      type: "bullets",
     },
     mousewheel: true,
     keyboard: true,
