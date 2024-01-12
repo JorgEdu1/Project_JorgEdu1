@@ -21,3 +21,17 @@ document.addEventListener('DOMContentLoaded',() => {
   .type('Jorge Eduardo Aqui!',{delay:500})
   .go(); 
 })
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+  
+  var curruculoPath = './CV.pdf';
+
+  var link = document.createElement('a');
+  link.href = curruculoPath;
+  link.download = 'CV-Jorge_Eduardo_Silva_Sousa.pdf';
+
+  document.body.appendChild(link);
+  link.click();
+
+  document.body.removeChild(link);
+});
